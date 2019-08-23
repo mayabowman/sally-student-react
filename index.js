@@ -2,7 +2,16 @@
 
 function App(props) {
   return (
-    <section>
+    <header>
+      <h1>{props.name}</h1>
+      <address>
+        <a href={`sally.student@somewhere.com`}>{props.email}</a><br>
+        <p>{props.phone}</p>
+      </address>
+        <img className="picSize" src={`https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg`} alt={`very smart and hilarious lady with curly hair wearing a yellow shirt with zebras`} />
+    </header>
+    <main>
+      <section>
         <header>
           <h2>Education</h2>
         </header>
@@ -26,11 +35,15 @@ function App(props) {
         <p>09/1999 - 04/2007</p>
         <p>Id tacos green juice enim selvage put a bird on it esse raw denim unicorn pariatur. Knausgaard farm-to-table pitchfork, ennui taiyaki edison bulb laboris chia subway tile whatever narwhal shaman intelligentsia. Semiotics live-edge flannel, viral la croix roof party craft beer actually.</p>
       </section>
-  )
-}
+    </main>
+};
 
 const appRoot = document.querySelector('#root');
 ReactDOM.render(
-  <App />,
+  <App 
+    name='Sally Student'
+    email='sally.student@somewhere.com'
+    phone='919-123-4567'
+  />,
   appRoot
 );
