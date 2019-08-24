@@ -38,7 +38,7 @@ function App(props) {
         </section>
       </main>
     </div>
-  )
+  );
 };
 
 const appRoot = document.querySelector('#root');
