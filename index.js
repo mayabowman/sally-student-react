@@ -5,7 +5,7 @@ function App(props) {
     <header>
       <h1>{props.name}</h1>
       <address>
-        <a href={`sally.student@somewhere.com`}>{props.email}</a><br>
+        <a href={`sally.student@somewhere.com`}>{props.email}</a><br />
         <p>{props.phone}</p>
       </address>
         <img className="picSize" src={`https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg`} alt={`very smart and hilarious lady with curly hair wearing a yellow shirt with zebras`} />
